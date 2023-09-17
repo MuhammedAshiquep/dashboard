@@ -8,20 +8,26 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  /* .signin-left-wrapper {
+    @apply bg
+      background: blue;
+      height: 100px;
+      position: relative;
+      width: 150px;
+      color:white;
   }
-}
+  .signin-left-wrapper:before {
+      background: blue none repeat scroll 0 0;
+      content: "";
+      height: 100px;
+      position: absolute;
+      right: -25px;
+      transform: skew(-20deg);
+      width: 50px;
+  } */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .auth-social-logo {
+    @apply w-[44px] h-[44px]
+  }
 }
